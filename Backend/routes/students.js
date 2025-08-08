@@ -792,7 +792,7 @@ module.exports = (pool) => {
              total_fee = $8, amount_paid = $9, due_amount = $10, cash = $11, online = $12, security_money = $13,
              remark = $14, seat_id = $15, shift_id = $16, branch_id = $17, registration_number = $18,
              father_name = $19, aadhar_number = $20, profile_image_url = $21, 
-             aadhaar_front_url = $22, aadhaar_back_url = $23, locker_id = $24, discount = $25, changed_at = NOW()
+             aadhaar_front_url = $22, aadhaar_back_url = $23, locker_id = $24, discount = $25
          WHERE id = (SELECT id FROM student_membership_history WHERE student_id = $26 ORDER BY id DESC LIMIT 1)`,
          [
            updatedStudent.name, updatedStudent.email, updatedStudent.phone, updatedStudent.address,
